@@ -6,18 +6,7 @@ Rate Limiting: Enforces one task per second and 20 tasks per minute per user.
 Task Queueing: Tasks exceeding the rate limit are queued and processed sequentially.
 Logging: Task completions are logged with user ID and timestamp and stored in a log file.
 MongoDB Integration: MongoDB is used to persist user rate limits and manage task queues.
-Project Structure
-bash
-Copy code
-├── logs/                   # Directory for storing log files
-├── models/                 # Mongoose models for MongoDB
-│   ├── RateLimit.js        # Schema and model for storing rate limit data
-├── routes/                 # Express route handlers
-│   ├── task.js             # Task route that handles task processing
-├── server.js               # Main entry point of the application
-├── README.md               # This readme file
-├── package.json            # Project dependencies and scripts
-└── .gitignore              # Files and directories to ignore in git
+
 Setup Instructions
 Prerequisites
 Node.js (v14 or above)
